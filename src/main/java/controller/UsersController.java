@@ -32,7 +32,7 @@ public class UsersController {
 
     @GetMapping("/new")
     public String newUser(@ModelAttribute("new_user") User user) {
-        return "users/new";
+        return "new";
     }
 
     @PostMapping()

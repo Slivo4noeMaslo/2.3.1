@@ -9,8 +9,7 @@ import javax.servlet.ServletException;
 public class DispatcherConfig extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class<?>[]{
-                DatabaseConfig.class};
+        return null;
     }
 
     @Override

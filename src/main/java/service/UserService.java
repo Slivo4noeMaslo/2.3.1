@@ -11,8 +11,12 @@ import java.util.List;
 @Service
 public class UserService {
 
+    private final UserDaoImpl userDao;
+
     @Autowired
-    private UserDaoImpl userDao;
+    public UserService(UserDaoImpl userDao) {
+        this.userDao = userDao;
+    }
 
     @Transactional
     public void addUser(User user) {
